@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="description" content="Demo Portfolio - fictional sample work." />
+  <title>示例作品 · Demo Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="work">
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">Demo Portfolio</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" class="nav__link" data-page-link="home" data-i18n="nav.home">首页</a>
+      <a href="work.html" class="nav__link" data-page-link="work" data-i18n="nav.work">作品</a>
+      <a href="skills.html" class="nav__link" data-page-link="skills" data-i18n="nav.skills">能力</a>
+      <a href="about.html" class="nav__link" data-page-link="about" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="nav__right">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span data-lang="zh">中文</span>
+        <span data-lang="en" hidden>EN</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="work.html" data-i18n="nav.work">作品</a>
+      <a href="skills.html" data-i18n="nav.skills">能力</a>
+      <a href="about.html" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span data-i18n="about.basedV">示例城市 · 示例国家</span>
+      <span data-i18n="footer.email">placeholder@example.com</span>
+    </div>
+  </div>
+
+  <main class="page">
+    <header class="page-hero">
+      <p class="page-hero__eyebrow" data-i18n="work.eyebrow">Selected Work</p>
+      <h1 class="page-hero__title" data-i18n="work.title">示例项目</h1>
+      <p class="page-hero__lead" data-i18n="work.lead">四段虚构案例，用于替代真实履历信息。</p>
+    </header>
+
+    <section class="works">
+      <article class="work-card">
+        <div class="work-card__media">
+          <span data-i18n="works.p1.company">示例公司 A</span>
+          <span data-i18n="works.p1.code">Demo Alpha</span>
+        </div>
+        <div class="work-card__body">
+          <p class="work-card__year" data-i18n="works.p1.year">20XX.01 - 20XX.06</p>
+          <h2 class="work-card__name" data-i18n="works.p1.name">模块化桌面终端概念</h2>
+          <p class="work-card__tag" data-i18n="works.p1.tag">桌面设备 · 结构概念</p>
+          <p class="work-card__excerpt" data-i18n="works.p1.body"></p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__media">
+          <span data-i18n="works.p2.company">示例工作室 B</span>
+          <span data-i18n="works.p2.code">Demo Beta</span>
+        </div>
+        <div class="work-card__body">
+          <p class="work-card__year" data-i18n="works.p2.year">20XX.03 - 20XX.09</p>
+          <h2 class="work-card__name" data-i18n="works.p2.name">轻量化智能配件方案</h2>
+          <p class="work-card__tag" data-i18n="works.p2.tag">智能配件 · 轻量化探索</p>
+          <p class="work-card__excerpt" data-i18n="works.p2.body"></p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__media">
+          <span data-i18n="works.p3.company">示例实验室 C</span>
+          <span data-i18n="works.p3.code">Demo Gamma</span>
+        </div>
+        <div class="work-card__body">
+          <p class="work-card__year" data-i18n="works.p3.year">20XX.07 - 20XX.12</p>
+          <h2 class="work-card__name" data-i18n="works.p3.name">交互设备验证流程示例</h2>
+          <p class="work-card__tag" data-i18n="works.p3.tag">沉浸式交互 · 测试流程</p>
+          <p class="work-card__excerpt" data-i18n="works.p3.body"></p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__media">
+          <span data-i18n="works.p4.company">示例团队 D</span>
+          <span data-i18n="works.p4.code">Demo Delta</span>
+        </div>
+        <div class="work-card__body">
+          <p class="work-card__year" data-i18n="works.p4.year">20XX.10 - 20XX.12</p>
+          <h2 class="work-card__name" data-i18n="works.p4.name">轻型服务设备外观概念</h2>
+          <p class="work-card__tag" data-i18n="works.p4.tag">服务设备 · 外观与布局</p>
+          <p class="work-card__excerpt" data-i18n="works.p4.body"></p>
+        </div>
+      </article>
+    </section>
+
+    <p class="work__hint" data-i18n="work.hint">* 当前页面仅使用占位内容。</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span data-i18n="footer.note">© 2026 Demo Portfolio</span>
+      <a href="mailto:placeholder@example.com" data-i18n="footer.email">placeholder@example.com</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

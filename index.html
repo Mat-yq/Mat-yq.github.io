@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="description" content="Demo Portfolio - placeholder product design portfolio template." />
+  <title>Demo Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">Demo Portfolio</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" class="nav__link" data-page-link="home" data-i18n="nav.home">首页</a>
+      <a href="work.html" class="nav__link" data-page-link="work" data-i18n="nav.work">作品</a>
+      <a href="skills.html" class="nav__link" data-page-link="skills" data-i18n="nav.skills">能力</a>
+      <a href="about.html" class="nav__link" data-page-link="about" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="nav__right">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span data-lang="zh">中文</span>
+        <span data-lang="en" hidden>EN</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="work.html" data-i18n="nav.work">作品</a>
+      <a href="skills.html" data-i18n="nav.skills">能力</a>
+      <a href="about.html" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span data-i18n="about.basedV">示例城市 · 示例国家</span>
+      <span data-i18n="footer.email">placeholder@example.com</span>
+    </div>
+  </div>
+
+  <main class="welcome">
+    <div class="welcome__inner">
+      <div class="welcome__badge">
+        <span class="welcome__dot"></span>
+        <span data-i18n="welcome.status">● 示例状态</span>
+      </div>
+
+      <p class="welcome__eyebrow" data-i18n="welcome.eyebrow">概念设计 · 产品工程</p>
+      <h1 class="welcome__title" data-i18n="welcome.title">示例姓名</h1>
+      <p class="welcome__role" data-i18n="welcome.role">产品设计候选人 · 虚构作品集</p>
+      <p class="welcome__sub" data-i18n="welcome.sub">这是一段占位简介，用于展示页面排版。示例项目覆盖虚构产品方向。</p>
+
+      <div class="welcome__cta">
+        <a href="work.html" class="btn" data-i18n="welcome.cta1">查看示例作品</a>
+        <a href="about.html" class="btn btn--ghost" data-i18n="welcome.cta2">了解模板</a>
+      </div>
+
+      <ul class="welcome__stats">
+        <li>
+          <strong>4</strong>
+          <span data-i18n="welcome.stat1">示例项目</span>
+        </li>
+        <li>
+          <strong>3</strong>
+          <span data-i18n="welcome.stat2">占位成果</span>
+        </li>
+        <li>
+          <strong>5+</strong>
+          <span data-i18n="welcome.stat3">工具标签</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span data-i18n="footer.note">© 2026 Demo Portfolio</span>
+      <a href="mailto:placeholder@example.com" data-i18n="footer.email">placeholder@example.com</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

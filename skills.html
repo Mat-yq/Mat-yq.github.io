@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="description" content="Demo Portfolio - placeholder capability tags." />
+  <title>能力占位 · Demo Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="skills">
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">Demo Portfolio</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" class="nav__link" data-page-link="home" data-i18n="nav.home">首页</a>
+      <a href="work.html" class="nav__link" data-page-link="work" data-i18n="nav.work">作品</a>
+      <a href="skills.html" class="nav__link" data-page-link="skills" data-i18n="nav.skills">能力</a>
+      <a href="about.html" class="nav__link" data-page-link="about" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="nav__right">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span data-lang="zh">中文</span>
+        <span data-lang="en" hidden>EN</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="work.html" data-i18n="nav.work">作品</a>
+      <a href="skills.html" data-i18n="nav.skills">能力</a>
+      <a href="about.html" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span data-i18n="about.basedV">示例城市 · 示例国家</span>
+      <span data-i18n="footer.email">placeholder@example.com</span>
+    </div>
+  </div>
+
+  <main class="page">
+    <header class="page-hero">
+      <p class="page-hero__eyebrow" data-i18n="skills.eyebrow">Capabilities</p>
+      <h1 class="page-hero__title" data-i18n="skills.title">能力标签</h1>
+      <p class="page-hero__lead" data-i18n="skills.lead">以下能力为作品集模板占位项。</p>
+    </header>
+
+    <section class="skills-grid">
+      <article class="skill-card">
+        <header class="skill-card__head">
+          <span class="skill-card__num">01</span>
+          <h2 class="skill-card__title" data-i18n="skills.g1">CAD / 建模</h2>
+        </header>
+        <ul class="skill-list">
+          <li>Sample CAD</li>
+          <li>Sample Modeling</li>
+          <li>Sample Rendering</li>
+          <li>Sample Layout Tool</li>
+        </ul>
+      </article>
+
+      <article class="skill-card">
+        <header class="skill-card__head">
+          <span class="skill-card__num">02</span>
+          <h2 class="skill-card__title" data-i18n="skills.g2">结构 / 验证</h2>
+        </header>
+        <ul class="skill-list">
+          <li data-i18n="skills.s1">结构概念拆分</li>
+          <li data-i18n="skills.s2">装配关系梳理</li>
+          <li data-i18n="skills.s3">样件检查流程</li>
+          <li data-i18n="skills.s4">尺寸与手感验证</li>
+        </ul>
+      </article>
+
+      <article class="skill-card">
+        <header class="skill-card__head">
+          <span class="skill-card__num">03</span>
+          <h2 class="skill-card__title" data-i18n="skills.g3">产品设计</h2>
+        </header>
+        <ul class="skill-list">
+          <li data-i18n="skills.i1">外观比例探索</li>
+          <li data-i18n="skills.i2">CMF 方向整理</li>
+          <li data-i18n="skills.i3">草图 / 方案表达</li>
+          <li data-i18n="skills.i4">3D 渲染演示</li>
+        </ul>
+      </article>
+
+      <article class="skill-card">
+        <header class="skill-card__head">
+          <span class="skill-card__num">04</span>
+          <h2 class="skill-card__title" data-i18n="skills.g4">制造 / 流程</h2>
+        </header>
+        <ul class="skill-list">
+          <li data-i18n="skills.m1">材料与工艺假设</li>
+          <li data-i18n="skills.m2">BOM 占位管理</li>
+          <li data-i18n="skills.m3">快速样件规划</li>
+          <li data-i18n="skills.m4">测试数据整理</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span data-i18n="footer.note">© 2026 Demo Portfolio</span>
+      <a href="mailto:placeholder@example.com" data-i18n="footer.email">placeholder@example.com</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

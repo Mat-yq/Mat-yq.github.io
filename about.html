@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="description" content="Demo Portfolio - placeholder about page." />
+  <title>关于占位 · Demo Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="about">
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">Demo Portfolio</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" class="nav__link" data-page-link="home" data-i18n="nav.home">首页</a>
+      <a href="work.html" class="nav__link" data-page-link="work" data-i18n="nav.work">作品</a>
+      <a href="skills.html" class="nav__link" data-page-link="skills" data-i18n="nav.skills">能力</a>
+      <a href="about.html" class="nav__link" data-page-link="about" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="nav__right">
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span data-lang="zh">中文</span>
+        <span data-lang="en" hidden>EN</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="work.html" data-i18n="nav.work">作品</a>
+      <a href="skills.html" data-i18n="nav.skills">能力</a>
+      <a href="about.html" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span data-i18n="about.basedV">示例城市 · 示例国家</span>
+      <span data-i18n="footer.email">placeholder@example.com</span>
+    </div>
+  </div>
+
+  <main class="page">
+    <header class="page-hero">
+      <p class="page-hero__eyebrow" data-i18n="about.eyebrow">About</p>
+      <h1 class="page-hero__title" data-i18n="about.title">关于这个模板</h1>
+      <p class="page-hero__lead" data-i18n="about.lead">虚构个人简介 · 占位教育经历 · 示例研究与奖项</p>
+    </header>
+
+    <section class="about">
+      <div class="about__bio">
+        <p data-i18n="about.p1">这里是一段占位个人简介，可替换为公开安全版本。</p>
+        <p data-i18n="about.p2">示例人物关注产品设计、结构概念与工程表达，项目描述均为虚构场景。</p>
+        <p data-i18n="about.p3">研究、论文、奖项与联系方式均已替换为占位内容。</p>
+        <div class="about__cta">
+          <a class="btn" href="#" data-i18n="about.cv">示例简历按钮</a>
+        </div>
+      </div>
+
+      <section class="about-section">
+        <header class="about-section__head">
+          <p class="about-section__eyebrow" data-i18n="edu.eyebrow">Education</p>
+          <h2 class="about-section__title" data-i18n="edu.title">教育背景占位</h2>
+        </header>
+
+        <ul class="timeline">
+          <li class="timeline__item">
+            <p class="timeline__period" data-i18n="edu.e1.period">20XX.09 - 20XX.06</p>
+            <div>
+              <h3 class="timeline__title" data-i18n="edu.e1.title">示例研究生院 · 产品创新方向</h3>
+              <p class="timeline__detail" data-i18n="edu.e1.detail">占位课程：设计方法、工程制图、数据分析、产品原型、用户研究。</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__period" data-i18n="edu.e2.period">20XX.09 - 20XX.06</p>
+            <div>
+              <h3 class="timeline__title" data-i18n="edu.e2.title">示例本科院校 · 设计相关专业</h3>
+              <p class="timeline__detail" data-i18n="edu.e2.detail">占位课程：造型基础、材料工艺、计算机辅助设计、模型制作、设计表达。</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__period" data-i18n="edu.e3.period">20XX.01 - 20XX.12</p>
+            <div>
+              <h3 class="timeline__title" data-i18n="edu.e3.title">示例经历 · 团队协作</h3>
+              <p class="timeline__detail" data-i18n="edu.e3.detail">虚构经历说明：参与团队任务、流程整理与项目复盘，获得示例表彰。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <header class="about-section__head">
+          <p class="about-section__eyebrow" data-i18n="pub.eyebrow">Research</p>
+          <h2 class="about-section__title" data-i18n="pub.title">研究与成果占位</h2>
+          <p class="about-section__lead" data-i18n="pub.lead">示例课题负责人 · 指导老师：Prof. Placeholder。</p>
+        </header>
+
+        <ul class="pubs">
+          <li class="pub">
+            <h3 class="pub__title" data-i18n="pub.p1.title">示例论文 1：多模态体验分析框架（占位标题）</h3>
+            <p class="pub__meta" data-i18n="pub.p1.meta">Demo Journal · Under Review</p>
+          </li>
+          <li class="pub">
+            <h3 class="pub__title" data-i18n="pub.p2.title">示例论文 2：用户需求与设计策略研究（占位标题）</h3>
+            <p class="pub__meta" data-i18n="pub.p2.meta">Demo Conference</p>
+          </li>
+          <li class="pub">
+            <h3 class="pub__title" data-i18n="pub.p3.title">示例论文 3：产品反馈文本分析方法（占位标题）</h3>
+            <p class="pub__meta" data-i18n="pub.p3.meta">Demo Journal · Draft</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <header class="about-section__head">
+          <p class="about-section__eyebrow" data-i18n="aw.eyebrow">Honors &amp; Awards</p>
+          <h2 class="about-section__title" data-i18n="aw.title">奖项占位</h2>
+        </header>
+
+        <ul class="chips">
+          <li>示例奖项 A</li>
+          <li>示例奖项 B</li>
+          <li>示例证书 C</li>
+          <li>示例活动 D</li>
+        </ul>
+      </section>
+
+      <section class="about__contact">
+        <header class="about__contact-head">
+          <p class="about__contact-eyebrow" data-i18n="about.contactEyebrow">Contact</p>
+          <h2 class="about__contact-title" data-i18n="about.contactTitle">联系方式占位</h2>
+        </header>
+
+        <ul class="contact-cards">
+          <li class="contact-card">
+            <span class="contact-card__k">Email</span>
+            <a class="contact-card__v" href="mailto:placeholder@example.com">placeholder@example.com</a>
+          </li>
+          <li class="contact-card">
+            <span class="contact-card__k">GitHub</span>
+            <a class="contact-card__v" href="#" target="_blank" rel="noopener">@placeholder</a>
+          </li>
+          <li class="contact-card">
+            <span class="contact-card__k" data-i18n="about.basedK">坐标</span>
+            <span class="contact-card__v" data-i18n="about.basedV">示例城市 · 示例国家</span>
+          </li>
+          <li class="contact-card">
+            <span class="contact-card__k" data-i18n="about.availK">状态</span>
+            <span class="contact-card__v is-accent" data-i18n="about.availV">● 示例状态</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span data-i18n="footer.note">© 2026 Demo Portfolio</span>
+      <a href="mailto:placeholder@example.com" data-i18n="footer.email">placeholder@example.com</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
